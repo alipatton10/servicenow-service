@@ -15,7 +15,7 @@ Configuration changes during runtime are sometimes necessary to increase flexibi
 **Note:** Tutorial tested on Madrid and New York releases.
 - Event Management plugin (com.glideapp.itom.snac) needs to be enabled on ServiceNow instance. \
 **Note:** To enable a plugin on a developer ServiceNow instance, visit the [Developer Portal] then go to **MANAGE -> instance** and click on the **Action** button and select **Activate plugin**. From the available plugins list click on **ACTIVATE** next to Event Management and then select **Activate plugin only**. The process will take a few minutes to complete.
-- [Dynatrace setup] for monitoring is mandatory:
+- [Dynatrace setup] for monitoring is mandatory.
 - Clone the GitHub repository with the necessary files for the tutorial:
 
 ```
