@@ -11,7 +11,7 @@ env:
     - GOPROXY=https://proxy.golang.org
 before_install:
   - export TZ=Europe/Vienna
-  - IMAGE=keptncontrib/servicenow-service
+  - IMAGE=alipatton10/servicenow-service
   - REPO_URL="$(git remote get-url --all origin)"
   # get the last tag
   - GIT_LAST_TAG=$(git describe --tags $(git rev-list --tags --max-count=1) || echo "0.0.0")

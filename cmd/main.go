@@ -138,7 +138,7 @@ func createEvent(event cloudevents.Event, shkeptncontext string, data keptnevent
 		severity = "4"
 	}
 
-	if problemInfo.Status == "RESOLVED" {
+	if problemInfo.Status == "CLOSED" {
 		resolutionState = "Closing"
 	} else {
 		resolutionState = "New"
