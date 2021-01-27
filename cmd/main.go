@@ -78,7 +78,7 @@ func gotEvent(ctx context.Context, event cloudevents.Event) error {
 		return err
 	}
 
-	if event.Type() != keptnevents.ProblemOpenEventType {
+	if event.Type() != keptnevents.ProblemEventType {
 		const errorMsg = "Received unexpected keptn event"
 		logger.Error(errorMsg)
 		return errors.New(errorMsg)
