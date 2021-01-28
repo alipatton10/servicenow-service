@@ -1,4 +1,4 @@
-module github.com/keptn-contrib/servicenow-service
+module github.com/alipatton10/servicenow-service
 
 go 1.12
 

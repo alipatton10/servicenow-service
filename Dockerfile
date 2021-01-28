@@ -4,7 +4,7 @@
 # https://hub.docker.com/_/golang
 FROM golang:1.12.13-alpine as builder
 
-WORKDIR /go/src/github.com/keptn-contrib/servicenow-service
+WORKDIR /go/src/github.com/alipatton10/servicenow-service
 
 ENV GO111MODULE=on
 ENV GOPROXY=https://proxy.golang.org
@@ -37,7 +37,7 @@ FROM alpine:3.11
 RUN apk add --no-cache ca-certificates libc6-compat
 
 # Copy the binary to the production image from the builder stage.
-COPY --from=builder /go/src/github.com/keptn-contrib/servicenow-service/servicenow-service /servicenow-service
+COPY --from=builder /go/src/github.com/alipatton10/servicenow-service/servicenow-service /servicenow-service
 
 EXPOSE 8080
 
